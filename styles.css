@@ -98,3 +98,23 @@ body, html {
     display: flex;
     justify-content: space-between;
 }
+
+
+
+
+
+
+.footerButton {
+    color: white;
+    background-color: slateblue;
+    font-size: 27px;
+    border: silver outset 3px;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+.footerButton:hover {
+    background-color: rgb(83, 71, 163);
+}
+.footerButton:active {
+    border: silver inset 3px
+}
