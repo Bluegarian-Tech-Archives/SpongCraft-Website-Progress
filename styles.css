@@ -49,6 +49,33 @@ body, html {
     color: white;
   }
 
+.headerNavBar {
+    background: rgb(51, 51, 51);
+    color: white;
+}
+
+.navBarList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+}
+
+.navBarText, .navBarText:link, .navBarText:visited {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+.navBarText:hover {
+    background-color: rgb(107, 107, 107);
+}
+.navBarText:active {
+    background-color: rgb(172, 172, 172);
+}
+
 .discordServerImage {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Media/Images/discordlogo.png");
     height: 100%;
@@ -98,11 +125,6 @@ body, html {
     display: flex;
     justify-content: space-between;
 }
-
-
-
-
-
 
 .footerButton {
     color: white;

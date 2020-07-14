@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="en">
 
 <head>
     <title>SpongCraft Official Site</title>
@@ -7,6 +7,7 @@
     <meta name="description" content="The Official Website of the SpongCraft Server">
     <meta name="author" content="Emperor of Bluegaria (Jack H.)">
     <meta charset="UTF-8">
+    <meta name="keywords" content="SpongCraft, Spongoose, Server">
 
     <meta property="og:title" content="SpongCraft Official Site">
     <meta property="og:image" content="https://bluegarian-tech-archives.github.io/SpongCraft-Website-Progress/Media/Images/sponglogo.png">
@@ -21,9 +22,21 @@
     <link rel="shortcut icon" href="Media/Favicon/sponglogo.png">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%
+        }
+        .sticky + .content {
+            padding-top: 102px;
+        }
+    </style>
 </head>
 
 <!-- Header Image and headline -->
+
 <body>
     <div class="headerImage" id="Top">
         <div class="headerImageText">
@@ -31,10 +44,40 @@
         </div>
     </div>
 
+<!-- Fixed head nav bar -->
+
+    <div class="headerNavBar" id="hNavBar">
+        <ul class="navBarList" style="width: 100%;">
+            <li style="font-size: 30px; font-weight: bold; display: inline-block; padding: 3px 12px;">Navigator:</li>
+            <li class="navBarText">
+                <a href="#Welcome" class="navBarText" style="color: white;">
+                Welcome
+                </a>
+            </li>
+            <li class="navBarText">
+                <a href="#CheckOutOur" class="navBarText" style="color: white;">
+                Check out our
+                </a>
+            </li>
+            <li class="navBarText">
+                <a href="#Store" class="navBarText" style="color: white;">
+                    MC Server Store
+                </a>
+            </li>
+            <!--
+            <li style="display: inline-block;">
+                <img src="Media/Images/sponglogo.png" style="width: 50px; height: 50px; display: inline-block;" alt="Logo">
+            </li>
+            -->
+        </ul>
+    </div>
+
 <!-- Welcome and subheadline -->
 
+<div class="content">
+
     <div>
-        <h1 style="text-align: center; font-size: 55px; color: navy; text-decoration: underline; font-weight: bold;">
+        <h1 style="text-align: center; font-size: 55px; color: navy; text-decoration: underline; font-weight: bold;" id="Welcome">
             Welcome
         </h1>
     </div>
@@ -51,7 +94,7 @@
 <!-- Check out our links to stuff table -->
 
     <div>
-        <h1 style="font-size: 55px; text-align: center; color: navy; text-decoration: underline; font-weight: bold;">
+        <h1 style="font-size: 55px; text-align: center; color: navy; text-decoration: underline; font-weight: bold;" id="CheckOutOur">
             Check out Our:
         </h1>
 
@@ -120,7 +163,7 @@
                     href="https://spongcraftmymcserverorg.tebex.io/" target="_blank">Here</a></span>
         </h1>
 
-        <div style="background-color: white;">
+        <div style="background-color: white;" id="Store">
             <iframe src="https://spongcraftmymcserverorg.tebex.io/" width="99%" height="1000" title="Store Embed"
                 style="border: none"></iframe>
         </div>
@@ -139,6 +182,26 @@
             </a>
         </div>
     </footer>
+
+</div>
+
+<script type="text/javascript">
+// Nav bar
+window.onscroll = function() {headerNavBarSticky()};
+
+let header = document.getElementById("hNavBar");
+
+let sticky = header.offsetTop;
+
+function headerNavBarSticky() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  }else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 
 </html>
