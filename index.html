@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> /* test */
+<html lang="en">
 
 <head>
     <title>SpongCraft Official Site</title>
@@ -38,7 +38,7 @@
 <!-- Header Image and headline -->
 
 <body>
-    <div class="headerImage" id="Top">
+    <div class="headerImage">
         <div class="headerImageText">
             <h1 style="font-size: 65px; text-shadow: 3px 3px rgb(27, 27, 27);">SpongCraft Official Site</h1>
         </div>
@@ -105,14 +105,14 @@
               <th style="font-size: 45px; color: white; text-shadow: 2px 2px rgb(48, 48, 48);">Minecraft Server</th>
               <th style="font-size: 45px; color: white; text-shadow: 2px 2px rgb(48, 48, 48);"><span style="color: red;">You</span>Tube Channel</th>
             </tr>
-            <tr>
+            <tr style="width: 100%;">
               <td class="discordServerImage" title="Our Discord Server" style="width: 33.3%;">
                   <a href="https://discord.com/invite/9fByzCx" target="_blank" style="text-decoration: none;">
                       <div class="linksText">
                           <p style="padding: 100px 1px; text-shadow: 2px 2px rgb(48, 48, 48);">Join</p>
                       </div>
                   </a>
-              </td>
+             </td>
               <td class="minecraftServerImage" title="Our Minecraft Server" style="width: 33.3%;">
                   <a href="https://server.pro/server/13893537" target="_blank" style="text-decoration: none;">
                       <div class="linksText">
@@ -121,8 +121,7 @@
                   </a>
               </td>
               <td class="youtubeChannelImage" title="Our YouTube Channel" style="width: 33.3%;">
-                  <a href="https://www.youtube.com/channel/UCdimxkDMsLCEhAh_45PvSZQ" target="_blank"
-                      style="text-decoration: none;">
+                  <a href="https://www.youtube.com/channel/UCdimxkDMsLCEhAh_45PvSZQ" target="_blank" style="text-decoration: none;">
                       <div class="linksText">
                           <p style="padding: 100px 1px; text-shadow: 2px 2px rgb(48, 48, 48);">View</p>
                       </div>
@@ -159,27 +158,26 @@
 
     <div>
         <h1 style="font-size: 55px; text-align: center; color: navy; text-decoration: underline; font-weight: bold;">
-            Iframe Test: (lmao it works) <span style="font-size: 30px;">Iframe source: <a
+            Iframe Test: (lmao it works)<span style="font-size: 30px;">Iframe source: <a
                     href="https://spongcraftmymcserverorg.tebex.io/" target="_blank">Here</a></span>
         </h1>
 
         <div style="background-color: white;" id="Store">
-            <iframe src="https://spongcraftmymcserverorg.tebex.io/" width="99%" height="1000" title="Store Embed"
-                style="border: none"></iframe>
+            <iframe src="https://spongcraftmymcserverorg.tebex.io/" width="99%" height="1000" title="Store Embed" style="border: none"></iframe>
         </div>
     </div>
 
 <!-- Footer of website -->
 
     <footer style="background-color: rgb(8, 23, 110); width: 100%; height: 30%;">
-        <h1 style="color: white; text-align: center; padding: 2% 0; text-decoration: underline; font-size: 35px;">The
-            SpongCraft Official Website</h1>
+        <h1 style="color: white; text-align: center; padding: 2% 0; text-decoration: underline; font-size: 35px;">
+            The SpongCraft Official Website
+        </h1>
+
         <div style="text-align: center;">
-            <a href="#Top">
-                <button class="footerButton">
-                    Back to Top
-                </button>
-            </a>
+            <button class="footerButton" id="btnScrollTop" onload="waitLoadBtnScrollTop()">
+                Back to Top
+            </button>
         </div>
     </footer>
 
